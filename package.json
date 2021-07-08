@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node-sass sass/style.scss css/style.css -w",
     "compress:css": "node-sass css/style.css css/compile.css --output-style compressed",
-    "install": "babel main.js --watch --out-dir js"
+    "install": "babel js/cods.js --watch --out-dir dist"
   },
   "dependencies": {},
   "devDependencies": {
