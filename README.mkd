@@ -4,6 +4,21 @@
 - Breadcrumb
 - Buttons
 - Button group
+- Grid
+- Flex-box 
+- Image gallery with filter
+- Button repale effect
+- Dark and light mood
+- Geolocation api
+- Print page
+- Scroll animation
+- Scroll into fixed nav
+- Scroll to manue link active
+- Smooth scroll
+- User online offline
+- Ajax
+- Fetch
+- Chart
 - Card
 - Carousel
 - slider
@@ -27,12 +42,3 @@
 - Input group
 - Floating labels
 - Validation
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
