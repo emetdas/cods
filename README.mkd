@@ -1,5 +1,4 @@
 # cods
-- modal
 - accrodion
 - badge
 - Breadcrumb
@@ -9,16 +8,15 @@
 - Carousel
 - slider
 - Collapse
+- comming-soon-timer
+- browser detector
 - Dropdowns
 - List group
 - Modal
-- Navs & tabs
+- tabs
 - Navbar
-- Offcanvas
 - Pagination
-- Popovers
-- Progress
-- Scrollspy
+- Progressbar
 - Spinners
 - Toasts
 - Tooltips
@@ -28,7 +26,6 @@
 - Range
 - Input group
 - Floating labels
-- Layout
 - Validation
 - 
 - 
