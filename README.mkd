@@ -1,1 +1,41 @@
 # cods
+- modal
+- accrodion
+- badge
+- Breadcrumb
+- Buttons
+- Button group
+- Card
+- Carousel
+- slider
+- Collapse
+- Dropdowns
+- List group
+- Modal
+- Navs & tabs
+- Navbar
+- Offcanvas
+- Pagination
+- Popovers
+- Progress
+- Scrollspy
+- Spinners
+- Toasts
+- Tooltips
+- Form control
+- Select
+- Checks & radios
+- Range
+- Input group
+- Floating labels
+- Layout
+- Validation
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
