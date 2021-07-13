@@ -1,7 +1,10 @@
+p {
+  @include font-size($p-font-sizes);
+}
 // heading-typography-start
 @each $proprites, $value in $heading {
-    #{$proprites}{
-        font-size: $value; 
-    }
+  #{$proprites} {
+    font-size: $value;
+  }
 }
 // heading-typography-end

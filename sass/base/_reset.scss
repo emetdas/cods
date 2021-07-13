@@ -21,9 +21,6 @@ html {
 a {
     background-color: transparent;
 }
-p {
-  @include font-size($p-font-sizes);
-}
 main {
   display: block;
 }
