@@ -1,0 +1,8 @@
+@for $i from 1 through 3{
+    .round-#{$i}{ 
+        border-radius: $i#{rem};
+    }
+}
+.round-circle{
+    border-radius: 50%;
+}

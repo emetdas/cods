@@ -1,5 +1,0 @@
-// color-extract-fucntion-start
-@each $color,$value in $colors {
-    #{$color}:$value;
-}
-// color-extract-fucntion-end

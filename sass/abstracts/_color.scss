@@ -1,0 +1,24 @@
+// color-extract-fucntion-start
+@each $color,$value in $colors {
+    .#{$color}-color{
+        color:$value;
+    }
+}
+@each $color,$value in $colors {
+    .bg-#{$color}{
+        background:$value;
+    }
+}
+// color-extract-fucntion-end
+@each $color,$value in $grays {
+    .bg-gray-#{$color}{
+        background:$value;
+    }
+}
+// shade-and-tint-color-star
+@each $color,$value in $shade-tint {
+    .bg-#{$color}{
+        background:$value; 
+    }
+}
+// shade-and-tint-color-end

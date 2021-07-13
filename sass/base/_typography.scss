@@ -1,0 +1,7 @@
+// heading-typography-start
+@each $proprites, $value in $heading {
+    #{$proprites}{
+        font-size: $value; 
+    }
+}
+// heading-typography-end
