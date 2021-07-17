@@ -59,6 +59,7 @@ let color = [
   ['#3c8ce7', '#00eaff'],
   ['#ffcf71', '#2376dd'],
   ['#ff96f9', '#c32bac'],
+  ['#ff96f9', '#c32bac'],
 ];
 let container = document.querySelector('.color-all');
 color.forEach((one) => {
@@ -84,6 +85,6 @@ copy.forEach((e) => {
     textArea.select();
     textArea.setSelectionRange(0, 99999);
     document.execCommand("copy");
-    document.body.removeChild(textArea);
+    document.body.removeChild(textArea); 
   });
 });
