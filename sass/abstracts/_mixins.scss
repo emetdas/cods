@@ -31,27 +31,27 @@
 @mixin m-b($m) {
   margin-bottom: $m;
 }
-@mixin sudo-tl($t,$l) {
+@mixin sudo {
   position: absolute;
   content: '';
+}
+@mixin sudo-tl($t,$l) {
+  @include sudo();
   top: $t;
   left: $l;
 }
 @mixin sudo-tr($t,$r) {
-  position: absolute;
-  content: '';
+  @include sudo();
   top: $t;
   right:$r;
 }
 @mixin sudo-lb($l,$b) {
-  position: absolute;
-  content: '';
+  @include sudo();
   left: $l;
   bottom: $b;
 }
 @mixin sudo-rb($r,$b) {
-  position: absolute;
-  content: '';
+  @include sudo();
   right: $r;
   bottom: $b;
 }
