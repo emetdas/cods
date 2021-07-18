@@ -571,3 +571,10 @@ h6 {
 
 .round-circle {
   border-radius: 50%; }
+
+.box-shadow-1 {
+  box-shadow: 0, 0, 0.3rem, #ced4da;
+  -webkit-box-shadow: 0, 0, 0.3rem, #ced4da;
+  -moz-box-shadow: 0, 0, 0.3rem, #ced4da;
+  -ms-box-shadow: 0, 0, 0.3rem, #ced4da;
+  -o-box-shadow: 0, 0, 0.3rem, #ced4da; }

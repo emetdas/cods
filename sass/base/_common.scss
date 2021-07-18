@@ -6,3 +6,6 @@
 .round-circle{
     border-radius: 50%;
 }
+.box-shadow-1{
+    @include shadow(0,0,0.3rem,$gray-400);
+}
