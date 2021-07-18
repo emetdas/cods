@@ -1,5 +1,5 @@
 @mixin prefix($property, $parameters...) {
-  @each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
+  @each $prefix in '',-webkit-, -moz-, -ms-, -o-{
     #{$prefix}#{$property}: $parameters;
   }
 }
@@ -55,7 +55,9 @@
   right: $r;
   bottom: $b;
 }
-
+@mixin shadow($h,$v,$b,$c) {
+  @include prefix(box-shadow,$h,$v,$b,$c);
+}
 @mixin font-size($fs-map) {
     @each $fs-breakpoint, $fs-font-size in $fs-map {
       @if $fs-breakpoint == null {
