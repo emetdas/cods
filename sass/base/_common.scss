@@ -9,3 +9,7 @@
 .box-shadow-1{
     @include shadow(0,0,0.3rem,$gray-400);
 }
+.box{
+    @include w-h(10rem,10rem);
+    @include shadow(0,0,0.5rem,$purple);
+}

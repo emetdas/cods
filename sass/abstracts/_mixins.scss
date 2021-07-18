@@ -3,7 +3,7 @@
     #{$prefix}#{$property}: $parameters;
   }
 }
-@mixin w-h($w, $h) {
+@mixin w-h($w,$h) {
   width: $w;
   height: $h;
 }
@@ -56,7 +56,7 @@
   bottom: $b;
 }
 @mixin shadow($h,$v,$b,$c) {
-  @include prefix(box-shadow,$h,$v,$b,$c);
+  @include prefix(box-shadow,$h $v $b $c);
 }
 @mixin font-size($fs-map) {
     @each $fs-breakpoint, $fs-font-size in $fs-map {
