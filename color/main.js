@@ -61,6 +61,7 @@ let color = [
   ['#ff96f9', '#c32bac'],
   ['#ffcf50', '#c32bac'],
 ];
+
 let container = document.querySelector('.color-all');
 color.forEach((one) => {
   let card = document.createElement('div');
@@ -69,7 +70,7 @@ color.forEach((one) => {
   text.className = 'text';
   card.appendChild(text);
   text.innerText = `${one}`;
-  card.style.background = `linear-gradient(129deg,${one})`;
+  card.style.background = `linear-gradient(135deg,${one})`;
   container.appendChild(card);
 });
 let copy = document.querySelectorAll('.text');
