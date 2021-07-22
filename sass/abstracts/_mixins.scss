@@ -34,6 +34,9 @@
 @mixin br($property,$value){
   $property: $value;
 }
+@mixin ta($value){
+  text-align: $value;
+}
 @mixin sudo {
   position: absolute;
   content: '';
