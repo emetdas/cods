@@ -1,0 +1,7 @@
+.card{
+    width: 32rem; 
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    @include p(1rem);
+    @include shadow(0,0rem,0.3rem,$gray-300);
+}

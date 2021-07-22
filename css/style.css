@@ -638,6 +638,12 @@ h6 {
 .text-center {
   text-align: center; }
 
+.container {
+  max-width: 112rem;
+  margin: 0 auto;
+  width: calc(100% - 2rem);
+  padding: 0 1rem !important; }
+
 .round-1 {
   border-radius: 1rem; }
 
@@ -766,7 +772,11 @@ h6 {
   -o-box-shadow: inset 0 1rem 1rem #ced4da; }
 
 .translate-middle {
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%); }
 
 .float-left {
   float: left; }
@@ -793,3 +803,20 @@ h6 {
 .img-res {
   width: 100%;
   height: 100%; }
+
+.btn-primary {
+  background: #6610f2;
+  color: #fff;
+  display: inline-block;
+  padding: 0.4rem 2rem; }
+
+.card {
+  width: 32rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  box-shadow: 0 0rem 0.3rem #dee2e6;
+  -webkit-box-shadow: 0 0rem 0.3rem #dee2e6;
+  -moz-box-shadow: 0 0rem 0.3rem #dee2e6;
+  -ms-box-shadow: 0 0rem 0.3rem #dee2e6;
+  -o-box-shadow: 0 0rem 0.3rem #dee2e6; }

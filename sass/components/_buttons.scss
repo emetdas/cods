@@ -1,0 +1,6 @@
+.btn-primary{
+    background: $primary;
+    color: $white;
+    display: inline-block;
+    @include p(0.4rem 2rem);
+}

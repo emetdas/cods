@@ -7,6 +7,9 @@
   width: $w;
   height: $h;
 }
+@mixin p($p) {
+  padding: $p;
+}
 @mixin p-l($p) {
   padding-left: $p;
 }

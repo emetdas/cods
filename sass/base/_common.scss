@@ -1,3 +1,10 @@
+.container{
+    max-width: $container;
+    margin: 0 auto;
+    width: calc(100% - 2rem);
+    padding: 0 1rem !important;
+}
+
 // border-star
 @for $i from 1 through 3{
     .round-#{$i}{ 
@@ -87,7 +94,7 @@
 // box-shadow-end
 // position-start
 .translate-middle{ 
-   transform: translate(-50%, -50%);
+    @include prefix(transform,translate(-50%, -50%));
 }
 .float-left{
     float: left;
