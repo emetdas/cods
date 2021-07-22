@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,500;1,700&display=swap");
 *,
 *::after,
 *::before {
@@ -16,7 +17,8 @@ html, body {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   overflow-x: hidden;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif; }
 
 a {
   background-color: transparent;
@@ -27,8 +29,11 @@ a {
       font-size: 1.6rem; } }
   @media screen and (min-width: 640px) {
     a {
-      font-size: 1.7rem; } }
+      font-size: 1.6rem; } }
   @media screen and (min-width: 1024px) {
+    a {
+      font-size: 1.7rem; } }
+  @media screen and (min-width: 1224px) {
     a {
       font-size: 1.9rem; } }
 
@@ -604,8 +609,11 @@ p {
       font-size: 1.6rem; } }
   @media screen and (min-width: 640px) {
     p {
-      font-size: 1.7rem; } }
+      font-size: 1.6rem; } }
   @media screen and (min-width: 1024px) {
+    p {
+      font-size: 1.7rem; } }
+  @media screen and (min-width: 1224px) {
     p {
       font-size: 1.9rem; } }
 
@@ -639,18 +647,16 @@ h6 {
 .round-circle {
   border-radius: 50%; }
 
-.box-shadow-1 {
-  box-shadow: 0 0 0.3rem #ced4da;
-  -webkit-box-shadow: 0 0 0.3rem #ced4da;
-  -moz-box-shadow: 0 0 0.3rem #ced4da;
-  -ms-box-shadow: 0 0 0.3rem #ced4da;
-  -o-box-shadow: 0 0 0.3rem #ced4da; }
+.box-shadow-h-1 {
+  box-shadow: 0.3rem 0 0.3rem #ced4da;
+  -webkit-box-shadow: 0.3rem 0 0.3rem #ced4da;
+  -moz-box-shadow: 0.3rem 0 0.3rem #ced4da;
+  -ms-box-shadow: 0.3rem 0 0.3rem #ced4da;
+  -o-box-shadow: 0.3rem 0 0.3rem #ced4da; }
 
-.box {
-  width: 10rem;
-  height: 10rem;
-  box-shadow: 0 0 0.5rem #6f42c1;
-  -webkit-box-shadow: 0 0 0.5rem #6f42c1;
-  -moz-box-shadow: 0 0 0.5rem #6f42c1;
-  -ms-box-shadow: 0 0 0.5rem #6f42c1;
-  -o-box-shadow: 0 0 0.5rem #6f42c1; }
+.box-shadow-v-1 {
+  box-shadow: 0 0.3rem 0.3rem #ced4da;
+  -webkit-box-shadow: 0 0.3rem 0.3rem #ced4da;
+  -moz-box-shadow: 0 0.3rem 0.3rem #ced4da;
+  -ms-box-shadow: 0 0.3rem 0.3rem #ced4da;
+  -o-box-shadow: 0 0.3rem 0.3rem #ced4da; }

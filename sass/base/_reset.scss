@@ -1,4 +1,5 @@
 // https://www.w3schools.com/cssref/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,500;1,700&display=swap');
 *,
 *::after,
 *::before {
@@ -20,6 +21,7 @@ html,body{
   // 1rem = 10px = 62.5%
   overflow-x: hidden;
   font-size: 62.5%; 
+  font-family: $font-primary;
 }
 // all: unset; remove all css inbuild style
 a {
