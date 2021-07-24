@@ -1,14 +1,29 @@
-.navbar{
-  height: 6.5rem;
+.home {
+  height: 100vh;
+  width: 100%;
 }
-.navigation{
-  height: 6.5rem;
+.navbar{
+  z-index: 100;
+}
+.navigation {
+  height: $nav-height;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  & .nav_list{
+  & .nav_list {
     display: inline-block;
     margin: 0 0.4rem;
+  }
+  & .nav_manue {
+    z-index: 90;
+    background: $white;
+    @include prefix(transition, all 0.5s ease-in-out);
+    @include media(992px) {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      top: $nav-height;
+    }
   }
 }
 .nav_icon {
@@ -16,9 +31,13 @@
   @include w-h(3rem, 0.3rem);
   background: $gray-900;
   display: none;
+  @include media(992px) {
+    display: block;
+    right: 2rem;
+  }
   &::before,
   &::after {
-    @include prefix(transition, all 0.5s ease-in);
+    @include prefix(transition, all 0.5s ease-in-out);
     @include sudo();
     left: 0;
     @include w-h(100%, 100%);
@@ -41,4 +60,12 @@
       @include prefix(transform, rotate(-45deg));
     }
   }
+}
+.nav_manue.active {
+  height: calc(100vh - #{$nav-height});
+  background: $white;
+  width: 100%;
+  left: 0;
+  opacity: 1;
+  visibility: visible;
 }

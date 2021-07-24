@@ -70,6 +70,11 @@
 @mixin shadow-inset($i, $h, $v, $b, $c) {
   @include prefix(box-shadow, $i $h $v $b $c);
 }
+@mixin media($breakpoint){
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
 @mixin font-size($fs-map) {
   @each $fs-breakpoint, $fs-font-size in $fs-map {
     @if $fs-breakpoint == null {
