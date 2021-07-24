@@ -1,18 +1,34 @@
+.navbar{
+  height: 6.5rem;
+}
+.navigation{
+  height: 6.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  & .nav_list{
+    display: inline-block;
+    margin: 0 0.4rem;
+  }
+}
 .nav_icon {
   position: absolute;
-  right: 2rem;
-  @include w-h(2.5rem, 0.3rem);
+  @include w-h(3rem, 0.3rem);
   background: $gray-900;
+  display: none;
   &::before,
   &::after {
     @include prefix(transition, all 0.5s ease-in);
     @include sudo();
+    left: 0;
+    @include w-h(100%, 100%);
+    background: $gray-900;
   }
   &::before {
-    @include prefix(transform, translateY(-1rem));
+    @include prefix(transform, translateY(-0.8rem));
   }
   &::after {
-    @include prefix(transform, translateY(1rem));
+    @include prefix(transform, translateY(0.8rem));
   }
   &.active {
     & {
@@ -26,4 +42,3 @@
     }
   }
 }
-.nav_manue{}

@@ -22,19 +22,21 @@ html, body {
 
 a {
   background-color: transparent;
-  font-size: 1.5rem;
   color: #212529; }
+
+div {
+  font-size: 1.5rem; }
   @media screen and (min-width: 480px) {
-    a {
+    div {
       font-size: 1.6rem; } }
   @media screen and (min-width: 640px) {
-    a {
+    div {
       font-size: 1.6rem; } }
   @media screen and (min-width: 1024px) {
-    a {
+    div {
       font-size: 1.7rem; } }
   @media screen and (min-width: 1224px) {
-    a {
+    div {
       font-size: 1.9rem; } }
 
 main {
@@ -821,12 +823,24 @@ h6 {
   -ms-box-shadow: 0 0rem 0.3rem #dee2e6;
   -o-box-shadow: 0 0rem 0.3rem #dee2e6; }
 
+.navbar {
+  height: 6.5rem; }
+
+.navigation {
+  height: 6.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .navigation .nav_list {
+    display: inline-block;
+    margin: 0 0.4rem; }
+
 .nav_icon {
   position: absolute;
-  right: 2rem;
-  width: 2.5rem;
+  width: 3rem;
   height: 0.3rem;
-  background: #212529; }
+  background: #212529;
+  display: none; }
   .nav_icon::before, .nav_icon::after {
     transition: all 0.5s ease-in;
     -webkit-transition: all 0.5s ease-in;
@@ -834,19 +848,23 @@ h6 {
     -ms-transition: all 0.5s ease-in;
     -o-transition: all 0.5s ease-in;
     position: absolute;
-    content: ''; }
+    content: '';
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #212529; }
   .nav_icon::before {
-    transform: translateY(-1rem);
-    -webkit-transform: translateY(-1rem);
-    -moz-transform: translateY(-1rem);
-    -ms-transform: translateY(-1rem);
-    -o-transform: translateY(-1rem); }
+    transform: translateY(-0.8rem);
+    -webkit-transform: translateY(-0.8rem);
+    -moz-transform: translateY(-0.8rem);
+    -ms-transform: translateY(-0.8rem);
+    -o-transform: translateY(-0.8rem); }
   .nav_icon::after {
-    transform: translateY(1rem);
-    -webkit-transform: translateY(1rem);
-    -moz-transform: translateY(1rem);
-    -ms-transform: translateY(1rem);
-    -o-transform: translateY(1rem); }
+    transform: translateY(0.8rem);
+    -webkit-transform: translateY(0.8rem);
+    -moz-transform: translateY(0.8rem);
+    -ms-transform: translateY(0.8rem);
+    -o-transform: translateY(0.8rem); }
   .nav_icon.active {
     background: transparent; }
   .nav_icon.active::before {

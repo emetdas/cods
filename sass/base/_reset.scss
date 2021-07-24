@@ -26,8 +26,10 @@ html,body{
 // all: unset; remove all css inbuild style
 a {
     background-color: transparent;
-    @include font-size($p-font-sizes);
     color: $gray-900; 
+}
+div{
+  @include font-size($p-font-sizes);
 }
 main {
   display: block;
