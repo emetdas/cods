@@ -69,6 +69,7 @@
   opacity: 1;
   visibility: visible;
   & .nav_list{
-    
+    background: $color--indigo;
+    color: $white;
   }
 }
