@@ -7,5 +7,9 @@ function navbar(){
             nav_manue.classList.toggle('active');
         })
     });
+    let desk_low = window.matchMedia("(min-width: 992px)");
+    if (desk_low.matches) {
+        nav_manue.classList.remove('active');
+    }
 }
 navbar();

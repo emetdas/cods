@@ -832,16 +832,15 @@ h6 {
 
 .navigation {
   height: 6.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between; }
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important; }
   .navigation .nav_list {
     display: inline-block;
     margin: 0 0.4rem; }
   .navigation .nav_manue {
     z-index: 90;
-    background: #fff;
-    text-align: center; }
+    background: #fff; }
     @media (max-width: 992px) {
       .navigation .nav_manue {
         opacity: 0;
@@ -850,6 +849,7 @@ h6 {
         top: 6.5rem; } }
 
 .nav_icon {
+  cursor: pointer;
   position: relative;
   width: 3rem;
   height: 0.3rem;
@@ -860,6 +860,7 @@ h6 {
       display: block;
       right: 2rem; } }
   .nav_icon::before, .nav_icon::after {
+    cursor: pointer;
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -900,11 +901,11 @@ h6 {
 
 .nav_manue.active {
   height: calc(100vh - 6.5rem);
-  background: #fff;
   width: 100%;
   left: 0;
   opacity: 1;
   visibility: visible; }
   .nav_manue.active .nav_list {
-    background: #6610f2;
-    color: #fff; }
+    text-align: center;
+    display: block;
+    margin-top: 2rem; }

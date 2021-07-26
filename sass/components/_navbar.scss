@@ -7,9 +7,9 @@
 }
 .navigation {
   height: $nav-height;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important; 
   & .nav_list {
     display: inline-block;
     margin: 0 0.4rem;
@@ -17,8 +17,6 @@
   & .nav_manue {
     z-index: 90;
     background: $white;
-    text-align:center;
-    // @include prefix(transition, all 0.5s ease-in-out);
     @include media(992px) {
       opacity: 0;
       visibility: hidden;
@@ -28,6 +26,7 @@
   }
 }
 .nav_icon {
+  cursor: pointer;
   position: relative;
   @include w-h(3rem, 0.3rem);
   background: $gray-900;
@@ -38,6 +37,7 @@
   }
   &::before,
   &::after {
+    cursor: pointer;
     @include prefix(transition, all 0.5s ease-in-out);
     @include sudo();
     left: 0;
@@ -64,13 +64,13 @@
 }
 .nav_manue.active {
   height: calc(100vh - #{$nav-height});
-  background: $white;
   width: 100%;
   left: 0;
   opacity: 1;
   visibility: visible;
   & .nav_list{
-    background: $indigo;
-    color: $white;
+    text-align: center;
+    display: block; 
+    @include m-t(2rem);
   }
 }
