@@ -841,11 +841,7 @@ h6 {
   .navigation .nav_manue {
     z-index: 90;
     background: #fff;
-    transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out; }
+    text-align: center; }
     @media (max-width: 992px) {
       .navigation .nav_manue {
         opacity: 0;
@@ -854,7 +850,7 @@ h6 {
         top: 6.5rem; } }
 
 .nav_icon {
-  position: absolute;
+  position: relative;
   width: 3rem;
   height: 0.3rem;
   background: #212529;
@@ -909,3 +905,6 @@ h6 {
   left: 0;
   opacity: 1;
   visibility: visible; }
+  .nav_manue.active .nav_list {
+    background: #6610f2;
+    color: #fff; }

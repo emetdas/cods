@@ -17,7 +17,8 @@
   & .nav_manue {
     z-index: 90;
     background: $white;
-    @include prefix(transition, all 0.5s ease-in-out);
+    text-align:center;
+    // @include prefix(transition, all 0.5s ease-in-out);
     @include media(992px) {
       opacity: 0;
       visibility: hidden;
@@ -27,7 +28,7 @@
   }
 }
 .nav_icon {
-  position: absolute;
+  position: relative;
   @include w-h(3rem, 0.3rem);
   background: $gray-900;
   display: none;
@@ -68,9 +69,8 @@
   left: 0;
   opacity: 1;
   visibility: visible;
-  text-align:center;
   & .nav_list{
-    background: $color--indigo;
+    background: $indigo;
     color: $white;
   }
 }
