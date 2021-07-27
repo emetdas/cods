@@ -7,3 +7,17 @@
 setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
 setRequestHeader("X-Requested-With", "XMLHttpRequest");
 // setRequestHeader
+function ajaxlodad() {
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", "", true);
+  xhr.onload = () => {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+      if (xhr.status === 200) {
+        let data = xhr.response;
+        // .innerHTML = data;
+      }
+    }
+  };
+  xhr.send();
+}
+ajaxlodad();
