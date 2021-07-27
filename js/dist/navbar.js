@@ -9,6 +9,7 @@ function navbar() {
   });
 }
 navbar();
+
 // window.addEventListener('resize', () => {
 //   let desk_low = window.matchMedia('(min-width: 992px)');
 //   if (desk_low.matches) {
