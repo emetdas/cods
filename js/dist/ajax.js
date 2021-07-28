@@ -7,9 +7,9 @@
 setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
 setRequestHeader("X-Requested-With", "XMLHttpRequest");
 // setRequestHeader
-function ajaxlodad() {
+function ajaxlodad(url) {
   var xhr = new XMLHttpRequest();
-  xhr.open("GET", "", true);
+  xhr.open("GET", url, true);
   xhr.onload = () => {
     if (xhr.readyState === XMLHttpRequest.DONE) {
       if (xhr.status === 200) {
