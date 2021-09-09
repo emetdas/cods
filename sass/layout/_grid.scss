@@ -2,4 +2,3 @@
 @mixin grid($cols, $margin) {
     width: ((100% - (($cols - 1) * $margin)) / $cols);
 }
-
