@@ -63,6 +63,7 @@ let color = [
 ];
 
 let container = document.querySelector('.color-all');
+let copy_done = document.querySelector('.copy-done');
 color.forEach((one) => {
   let card = document.createElement('div');
   card.className = 'card';
@@ -79,13 +80,17 @@ copy.forEach((e) => {
     let clicked = c.target.closest('.text');
     let clicked_text = clicked.innerText;
     const textArea = document.createElement('textarea');
-    textArea.setAttribute('readonly','');
+    textArea.setAttribute('readonly', '');
     textArea.style.position = 'absolute';
     textArea.value = clicked_text;
     document.body.appendChild(textArea);
     textArea.select();
     textArea.setSelectionRange(0, 99999);
-    document.execCommand("copy");
-    document.body.removeChild(textArea); 
+    document.execCommand('copy');
+    copy_done.classList.add('active');
+    setTimeout(function () {
+      copy_done.classList.remove('active');
+    }, 2000);
+    document.body.removeChild(textArea);
   });
 });
